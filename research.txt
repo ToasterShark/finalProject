@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+------------------------Voronoi--Diagram------------------------
+----------------------------------------------------------------
+
+Voronoi diagrams separate a 2-D (3-D owo?) plane into polygons, where every
+	point on the polygon is closer to its corresponding point than any
+	other point.
+
+	:Uses:
+-pathfinding meshes and such
+-possibly a convex hull sorting algorithm?
+-image compression
+-3-D object compression 
