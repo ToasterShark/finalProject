@@ -16,10 +16,10 @@ vor        = "Voronoi"
 img = numpy.zeros((xWIN,yWIN,3))
 
 
-def drawstuff(points,image):
-    for point in points:
-        print point
-        cv2.circle(image,point,1,PNTCLR,-1)
+def drawstuff(po,im):
+    for p in po:
+        print p
+        cv2.circle(im,p,1,PNTCLR,-1)
 
 
 
@@ -29,7 +29,7 @@ def main():
         print "new point"
         newX = random.randint(0,xWIN)
         newY = random.randint(0,yWIN)
-        newPoint = (newX,newY)
+        newPoint = (newX,newY) 
         points.append(newPoint)
 
     print points
@@ -45,7 +45,11 @@ def main():
     drawstuff(points,img)
 
     cv2.imshow(vor,img)
-    cv2.waitKey(0)    
+    cv2.waitKey(0)
+
+def trongle(po,im):
+    trglst = []
+    
 
 
 if __name__ == '__main__':
